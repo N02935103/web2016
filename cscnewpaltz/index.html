@@ -33,7 +33,7 @@
 		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
 		<link rel="stylesheet" type="text/css" href="css/prism.css" />
 		<link rel="stylesheet" type="text/css" href="css/jportilio.css" />
-		
+
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 		<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.1.0.js"></script>
@@ -44,6 +44,7 @@
 		<script type="text/javascript" src="js/jportilio.js"></script>
 		<script type="text/javascript" src="js/prism.js"></script>
 		<script src="js/widjet.js"></script>
+		<script src="js/instafeed.js"></script>
 
 		<!-- Zabuto Calendar -->
 		<link rel="stylesheet" href="main.css">
@@ -70,6 +71,9 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li>
 								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#photos">Photos</a>
 							</li>
 							<li>
 								<a href="#projects">Projects</a>
@@ -122,29 +126,29 @@
 			</div>
 		</div>
 		<section id="about">
-		
+
 			<div class="title text-center">
 				<h1>About Our Club</h1>
-				<hr>
+				<hr class="light col-md-4 col-md-offset-4">
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 well">
 					<p>
-					A paragraph of information about when club meats and its hours the goal of the club and so on. Needs to be a paragraph long.
-					So blah blah blah Spectrum is a responsive Bootstrap design framework for one page websites. This theme features a variety of
-					easy to use content sections that you can cut and paste into the framework in whatever way you please! With the number of content sections
-					in this template, there are thousands of options for customization! When you're done, your site will be totally unique!
-						</p>
+						A paragraph of information about when club meats and its hours the goal of the club and so on. Needs to be a paragraph long.
+						So blah blah blah Spectrum is a responsive Bootstrap design framework for one page websites. This theme features a variety of
+						easy to use content sections that you can cut and paste into the framework in whatever way you please! With the number of content sections
+						in this template, there are thousands of options for customization! When you're done, your site will be totally unique!
+					</p>
 				</div>
-				</div>
-			</section>
-			<section id="about1">
-				<div class="row">
+			</div>
+		</section>
+		<section id="about1">
+			<div class="row">
 				<div class="col-xs-12 col-md-8">
 
 					<h2>Upcomming Events</h2>
 					<hr>
-					<div class="well">
+					<div class="well card1">
 						<h3 class="bold">Name of Events</h3>
 						<h5>Date of event</h5>
 						<p>
@@ -159,7 +163,7 @@
 
 					</div>
 
-					<div class="well">
+					<div class="well card2">
 
 						<h3 class="bold">Name of Events</h3>
 
@@ -175,7 +179,7 @@
 						</button>
 
 					</div>
-					<div class="well">
+					<div class="well card3">
 
 						<h3 class="bold">Name of Events</h3>
 
@@ -203,12 +207,13 @@
 					<!-- <em>Meetings are on Monday nights from 7pm to 9pm and Friday nights from 5pm to 7pm in Old Main 131 [Fall 2015].</em> -->
 					<hr>
 					<div ng-controller="DatepickerDemoCtrl">
-						<pre style=" max-width:310px"> <em>{{dt | date:'fullDate' }}</em></pre>												
+						<pre class="card3" style="display:inline-block; max-width:330px; "> <em>Today is {{dt | date:'fullDate' }}</em></pre>																		
+
 
 
 
 						<div style="display:inline-block; min-height:290px;">
-							<uib-datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
+							<uib-datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm card4" custom-class="getDayClass(date, mode)"></uib-datepicker>
 						</div>
 
 						<h3>Members Participation Status</h3>
@@ -222,16 +227,22 @@
 			</div>
 		</section>
 		<section id="about2">
-		
+
 			<div class="row">
 				<div class="col-xs-6">
 					<h2>About Us</h2>
 					<hr>
-					<p>
-						A paragraph of information about when club meats and its hours the goal of the club and so on. Needs to be a paragraph long. So blah blah blah Spectrum is a responsive Bootstrap design framework for one page websites. This theme features a variety of easy to use content sections that you can cut and paste into the framework in whatever way you please! With the number of content sections in this template, there are thousands of options for customization! When you're done, your site will be totally unique!
-					</p>
+					<div class="well card4">
+						<p>
+							A paragraph of information about when club meats and its hours the goal of the club and so on. Needs to be a paragraph long.
+							So blah blah blah Spectrum is a responsive Bootstrap design framework for one page websites. This theme features a variety of easy
+							to use content sections that you can cut and paste into the framework in whatever way you please! With the number of content sections in this template,
+							there are thousands of options for customization! When you're done, your site will be totally unique! A paragraph of information about when club meats and its hours the goal of the club and so on. Needs to be a paragraph long.
+
+						</p>
+					</div>
 				</div>
-				<div class="col-xs-5">
+				<div class="col-xs-6">
 					<h2>Our Members</h2>
 					<hr>
 					<div class="slides">
@@ -322,7 +333,7 @@
 							</div>
 
 						</div><!--/3-->
-						<div>
+					
 							<div id="mycarousel" class="carousel slide" data-ride="carousel">
 								<div class="carousel-inner">
 									<div class="item active">
@@ -344,21 +355,65 @@
 														<a class="light-text" href="#"><i class="fa fa-twitter fa-fw"></i></a>
 													</li>
 												</ul>
+												
 											</p>
 										</div>
 									</div>
 								</div>
-							</div>
-
 						</div>
+						</div>
+						<br>
+						</div>
+
+
+			</section>
+			<section id="photos">
+				   <div class="title text-center">
+					<h2>We are on Instagram!</h2>
+					<hr class="light col-md-4 col-md-offset-4">
+					<div class="container text-center">
+						
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?h=cHJvZ3JhbWluZ3xpbnwxMzB8NHwyfDhGQkNEQnxub3w1fGZhZGVPdXR8b25TdGFydHxub3x5ZXM=&ve=300116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+<script type="text/javascript">
+				
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: '83dd6c5958724e4d8e7e34c2a873f429'
+    });
+    feed.run();
+</script>
+<div id="instafeed">
+</div>
+				<!-- <div class="center col-md-4 col-md-offset-4">
+					<div>
+<img src="img/team-members/team--05.png">					
+</div>
+					<div>
+<img src="img/team-members/team--04.png">					
+					</div>
+					<div>
+<img src="img/team-members/team--06.png">					
+					</div>
+						<div>
+<img src="img/team-members/team--07.png">					
+</div>
+					<div>
+<img src="img/team-members/team--08.png">					
+					</div>
+					
+				</div> -->
+				
 		</section>
+
 		<section id="projects">
 			<div class='row text-center'>
 
-					<h1>Projects</h1>
-					<hr>
+				<h1>Projects</h1>
+				<hr class="light col-md-4 col-md-offset-4">
 
-				</div>
+			</div>
 
 			<script>
 				(function(i, s, o, g, r, a, m) {
@@ -394,165 +449,184 @@
 
 			<div id='demo' class='container'>
 
-				
-
-			</div>
+			
 
 			<div class='jprt-buttons'>
 
 				<div class='jprt-buttons'>
-				<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='embedded' >Embedded Systems</button>  
-				<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='web' >Web Development</button>
-				<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='android' >Android Development</button>
-				<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='ios' >IOS Development</button>
+					<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='embedded' >
+						Embedded Systems
+					</button>
+					<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='web' >
+						Web Development
+					</button>
+					<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='android' >
+						Android Development
+					</button>
+					<button class='jprt-btn' data-jprtgrid='jprt-ind' data-tag='ios' >
+						IOS Development
+					</button>
 
+				</div>
+				<br>
 
-			</div>		
-			<br>	
-				
-			<!-- grid of items -->
-			<div id='jprt-ind' class='jprt-container container text-center'>
-			
-				<!-- first item -->
-				<div class='jprt-item' data-tags='fruit' data-content-show='cover'>
-					<div id='apple_item' class='jprt-caption'>
-						<img src='img/proj/helicopter31.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>fruit</p>
-					</div>
-					<div class='jprt-content'>
-						<h1 class='jprt-item-title'>It's a fruit!</h1>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>apple</h1>
-					</div>
-				</div>
-				
-				
-				<!-- second item -->
-				<div class='jprt-item' data-tags='vegetable' data-content-show='new_section'>
-					<div id='carrot_item' class='jprt-caption'>
-						<img src='img/proj/web40.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>vegetable</p>
-					</div>
-					<div class='jprt-content'>
-						<div class='text-center'>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<h1 class='custom-content-title'>It's a vegetable!</h1>								
-							</div>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<img src='img/proj/web40.png' class='fruit_veg_img_in_cnt'>
-							</div>
-						</div>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>carrot</h1>
-					</div>
-				</div>
-				
-				
-				<!-- other items -->
-				<div class='jprt-item' data-tags='fruit' data-content-show='new_section'>
-					<div id='arbuz_item' class='jprt-caption'>
-						<img src='img/proj/chat137.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>fruit</p>
-					</div>
-					<div class='jprt-content'>
-						<div class='text-center'>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<img src='img/proj/chat137.png' class='fruit_veg_img_in_cnt'>
-							</div>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<h1 class='custom-content-title'>It's a fruit!</h1>
-							</div>
-						</div>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>watermelon</h1>
-					</div>
-				</div>
-				
-				<div class='jprt-item' data-tags='vegetable' data-content-show='cover'>
-					<div id='beans_item' class='jprt-caption'>
-						<img src='img/proj/logo79.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>vegetable</p>
-					</div>
-					<div class='jprt-content'>
-						<h1 class='jprt-item-title'>It's a vegetable!</h1>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>beans</h1>
-					</div>
-				</div>
-				
-				<div class='jprt-item' data-tags='fruit' data-content-show='new_section'>
-					<div id='banana_item' class='jprt-caption'>
-						<img src='img/proj/work12.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>fruit</p>
-					</div>
-					<div class='jprt-content'>
-						<div class='text-center'>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<h1 class='custom-content-title'>It's a vegetable!</h1>								
-							</div>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<img src='img/proj/work12.png' class='fruit_veg_img_in_cnt'>
-							</div>
-						</div>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>banana</h1>
-					</div>
-				</div>
-				
-				<div class='jprt-item' data-tags='vegetable' data-content-show='cover'>
-					<div id='celery_item' class='jprt-caption'>
-						<img src='img/proj/mobile-phone24.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>vegetable</p>
-					</div>
-					<div class='jprt-content'>
-						<h1 class='jprt-item-title'>It's a vegetable!</h1>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>celery</h1>
-					</div>
-				</div>
-				
-				
-				<!-- other items -->
-				<div class='jprt-item' data-tags='fruit' data-content-show='new_section'>
-					<div id='citrus_item' class='jprt-caption'>
-						<img src='img/proj/iphone26.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>fruit</p>
-					</div>
-					<div class='jprt-content'>
-						<div class='text-center'>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<img src='img/proj/iphone26.png' class='fruit_veg_img_in_cnt'>
-							</div>
-							<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
-								<h1 class='custom-content-title'>It's a fruit!</h1>
-							</div>
-						</div>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>citrus</h1>
-					</div>
-				</div>
-				
-				<div class='jprt-item' data-tags='vegetable' data-content-show='cover'>
-					<div id='radish_item' class='jprt-caption'>
-						<img src='img/proj/user73.png' class='fruit_veg_img'>
-						<p class='jprt-item-tags'>vegetable</p>
-					</div>
-					<div class='jprt-content'>
-						<h1 class='jprt-item-title'>It's a vegetable!</h1>
-					</div>
-					<div class='jprt-hover'>
-						<h1 class='jprt-item-title'>radish</h1>
-					</div>
-				</div>
+				<!-- grid of items -->
+				<div id='jprt-ind' class='jprt-container container text-center'>
 
-			</div>
+					<!-- first item -->
+					<div class='jprt-item' data-tags='fruit' data-content-show='cover'>
+						<div id='apple_item' class='jprt-caption'>
+							<img src='img/proj/helicopter31.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								fruit
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<h1 class='jprt-item-title'>It's a fruit!</h1>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>apple</h1>
+						</div>
+					</div>
+
+					<!-- second item -->
+					<div class='jprt-item' data-tags='vegetable' data-content-show='new_section'>
+						<div id='carrot_item' class='jprt-caption'>
+							<img src='img/proj/web40.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								vegetable
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<div class='text-center'>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<h1 class='custom-content-title'>It's a vegetable!</h1>
+								</div>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<img src='img/proj/web40.png' class='fruit_veg_img_in_cnt'>
+								</div>
+							</div>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>carrot</h1>
+						</div>
+					</div>
+
+					<!-- other items -->
+					<div class='jprt-item' data-tags='fruit' data-content-show='new_section'>
+						<div id='arbuz_item' class='jprt-caption'>
+							<img src='img/proj/chat137.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								fruit
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<div class='text-center'>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<img src='img/proj/chat137.png' class='fruit_veg_img_in_cnt'>
+								</div>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<h1 class='custom-content-title'>It's a fruit!</h1>
+								</div>
+							</div>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>watermelon</h1>
+						</div>
+					</div>
+
+					<div class='jprt-item' data-tags='vegetable' data-content-show='cover'>
+						<div id='beans_item' class='jprt-caption'>
+							<img src='img/proj/logo79.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								vegetable
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<h1 class='jprt-item-title'>It's a vegetable!</h1>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>beans</h1>
+						</div>
+					</div>
+
+					<div class='jprt-item' data-tags='fruit' data-content-show='new_section'>
+						<div id='banana_item' class='jprt-caption'>
+							<img src='img/proj/work12.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								fruit
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<div class='text-center'>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<h1 class='custom-content-title'>It's a vegetable!</h1>
+								</div>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<img src='img/proj/work12.png' class='fruit_veg_img_in_cnt'>
+								</div>
+							</div>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>banana</h1>
+						</div>
+					</div>
+
+					<div class='jprt-item' data-tags='vegetable' data-content-show='cover'>
+						<div id='celery_item' class='jprt-caption'>
+							<img src='img/proj/mobile-phone24.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								vegetable
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<h1 class='jprt-item-title'>It's a vegetable!</h1>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>celery</h1>
+						</div>
+					</div>
+
+					<!-- other items -->
+					<div class='jprt-item' data-tags='fruit' data-content-show='new_section'>
+						<div id='citrus_item' class='jprt-caption'>
+							<img src='img/proj/iphone26.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								fruit
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<div class='text-center'>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<img src='img/proj/iphone26.png' class='fruit_veg_img_in_cnt'>
+								</div>
+								<div class='col-sm-6 col-xs-6 col-md-6 col-lg-6'>
+									<h1 class='custom-content-title'>It's a fruit!</h1>
+								</div>
+							</div>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>citrus</h1>
+						</div>
+					</div>
+
+					<div class='jprt-item' data-tags='vegetable' data-content-show='cover'>
+						<div id='radish_item' class='jprt-caption'>
+							<img src='img/proj/user73.png' class='fruit_veg_img'>
+							<p class='jprt-item-tags'>
+								vegetable
+							</p>
+						</div>
+						<div class='jprt-content'>
+							<h1 class='jprt-item-title'>It's a vegetable!</h1>
+						</div>
+						<div class='jprt-hover'>
+							<h1 class='jprt-item-title'>radish</h1>
+						</div>
+					</div>
+
+				</div>
+				</div>
 
 		</section>
 
@@ -652,7 +726,10 @@
 					</li>
 				</ul>
 			</div>
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>			<br>
+			<div>
+				Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+			</div>
+			<br>
 			<br>
 
 		</footer>
@@ -670,12 +747,27 @@
 		<script>
 			$('.slides').slick({
 				autoplay : false,
+				arrows : false,
 				dots : true,
+				centerMode : true,
 				slidesToShow : 1,
 				slidesToScroll : 1,
 				focusOnSelect : true
 			});
 		</script>
+
+		<script>
+			$('.center').slick({
+				autoplay : false,
+				arrows : false,
+				dots : true,
+				centerMode : true,
+				slidesToShow : 3,
+				slidesToScroll : 3,
+				focusOnSelect : true
+			});
+		</script>
+
 		<!-- Custom Theme JavaScript -->
 
 		<script>

@@ -110,7 +110,14 @@ body {
 	font-family: sans-serif;
 	font-size: 16px;
 	line-height: 1.4;
-	background-color: #6D929B;
+	background-color: #ADD8E6;
+}
+
+body hr{
+	color: #df7158;
+background-color: #df7158;
+height: 2px;
+ 
 }
 a {
 	text-decoration: none;
@@ -188,29 +195,45 @@ a:hover .subtitle {
 	padding:40px 0;
 }
 
-#about .col-xs-12{
+#about1 .col-xs-12{
 	padding-left: 3%;
 }
 
-#about .col-xs-12  button{
+#about1 .col-xs-12  button{
     color: #fff;
     font-size: 16px;
     padding: 10px 15px;
     margin-right: 10px;
     box-shadow: none;
-    border: 2px solid green ;
+    
     outline-style: none;
     
       
 	}
 	
-	#about{
-		background-color:#447294;
+	#about h1{
+		color: white;
 	}
+	
+	#about{
+		background-color:#74BBFB;
+	}
+	
+	#about1 .col-md-6{
+		background-color:#fff;
+		border:1; 
+		color:black;
+	}
+	
+	
 	
 	#about1{
 		background-color: #E0EEEE;
 	}
+	
+	#about2 h2{
+	color:white;
+}
 	
 	#about2{
 		background-color:#8FBCDB;
@@ -219,6 +242,36 @@ a:hover .subtitle {
 	padding-left: 3%;
 }
 
+.insta{
+	padding-left:7px;
+	padding-right:3px;
+}
+
+#photos{
+	background-color:#ADD8E6; 
+}
+
+
+.card1{
+	background-color:#ffeb63; 
+}
+
+
+.card2{
+	background-color:#c0f491;
+}
+
+.card3{
+	background-color:#eae15a;
+}
+
+.card4{
+	 background-color:#b6e86e;
+}
+
+.card5{
+	background-color:#e9983f;
+}
 
 ul.bulleted {
   margin-bottom: 20px;
@@ -369,7 +422,9 @@ ul li {
 
 .slides img{
    position: relative; 
+   
 }
+
 
 .navbar a{
 	size: 9px;
@@ -385,7 +440,30 @@ ul li {
    transition: 1s;
 }
 
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: orange;
+    background-color: transparent;
+}
 
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: orange;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: orange;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default 
+.navbar-nav>.active>a:hover {
+    color: orange;
+    background-color: black;
+}
+
+.navbar-default{
+	color:orange;
+}
 
 
 .navbar li { color: white } 
@@ -519,8 +597,18 @@ background-color:#C1DAD6;
  
 }
 
+#projects h1{
+	color:white;
+}
+
+
+
 #contact{
 	background-color:#E0EEEE;
+}
+
+#contact h1{
+
 }
 
 section#contact .form-group {
@@ -678,6 +766,12 @@ footer{
 
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
 
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: orange;
+}
 
 
