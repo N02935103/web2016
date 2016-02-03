@@ -60,7 +60,10 @@ background: #FFA500;
     box-shadow: none;
     border: 2px solid #FFA500;
     outline-style: none;
+    
    }
+   
+   
 /**
  * This part should be set separately for each video
  * if there are multiple videos in your site.
@@ -213,6 +216,7 @@ a:hover .subtitle {
 	
 	#about h1{
 		color: white;
+		
 	}
 	
 	#about{
@@ -574,7 +578,7 @@ ul li {
 .icon-30:before { content: url("img/weather/cloudy19.png"); }
 .icon-31:before { content: "6"; }
 .icon-32:before {  content: url("img/weather/sun93.png"); }
-.icon-33:before { content: "6"; }
+.icon-33:before { content: url("img/weather/moon5.png"); }
 .icon-34:before { content: url("img/weather/sun93.png"); }
 .icon-35:before { content: "W"; }
 .icon-36:before { content: url("img/weather/sun93.png"); }
@@ -652,13 +656,16 @@ footer{
     color: white;
   }
   
-  .circle{
-  	    border-radius: 50%;
-  	    width: 10px;
-        height: 10px;
-        background: limegreen;
+ /*#myModal img{
+  	width: 200px;
+	height: 200px;
+	background: red;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
 
-  }
+  }*/
+  
+  
   
   li a{
   	color: red;
@@ -774,4 +781,10 @@ footer{
     color: orange;
 }
 
+ul li {
+    margin: 15px 0 0;
+    font-size: 15px;
+    color: red;
+    position: relative;
+}
 

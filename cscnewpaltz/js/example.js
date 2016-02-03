@@ -67,13 +67,26 @@ mondayMeating.setDate(date + 1 + 7 * noOfWeeksAhead - day); // 3 = wednesday, 7 
 var aftermondayMeating = new Date();
 
 var nxmeating= new Date();
+
+
+  
+
 if(nxmeating>mondayMeating){
 	nxmeating=fridayMeating;
 }
 
 if(nxmeating<mondayMeating){
 	nxmeating=mondayMeating;
+
 }
+
+if(nxmeating==mondayMeating){
+	nxmeating='mondayMeating';
+
+}
+
+
+
 // 
 // if(dt>fridayMeating){
 	// nxmeating=mondayMeating;
@@ -86,10 +99,13 @@ $scope.nextMeating=new Date(nxmeating);
       {
         date: fridayMeating,
         status: 'full'
+       // time: '7 in old main'
       },
       {
         date: mondayMeating,
         status: 'full'
+       // time: '5 in old main'
+
        }
       
           ];
@@ -110,6 +126,9 @@ $scope.nextMeating=new Date(nxmeating);
      
     
  }
+ 
+
+
 
   $scope.getDayClass = function(date, mode) {
     if (mode === 'day') {
@@ -127,3 +146,5 @@ $scope.nextMeating=new Date(nxmeating);
     return '';
   };
 });
+
+ 
