@@ -23,5 +23,5 @@ xhr.onreadystatechange = function() {
     document.getElementById('studentList').innerHTML = statusHTML;
   }
 };
-xhr.open('GET', 'data/file.json');
+xhr.open('GET', 'data/file.php');
 xhr.send();
