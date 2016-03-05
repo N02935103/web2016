@@ -9,3 +9,97 @@ header{
 body{
 	background-color:#E0EEEE;
 }
+
+ #profile{
+ 	position: absolute;
+    right: 7%;
+    top: 0%;
+    z-index: 1;
+}
+
+.panel .panel-info{
+	 	position: absolute;
+
+	    z-index: 1;
+	    
+
+}
+
+.container h1{
+	
+		    z-index: 1;
+
+}
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:14px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton1 {
+	background-color:#FFA500;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:19px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton1:hover {
+	background-color:#EE9A00;
+}
+.myButton1:active {
+	position:relative;
+	top:1px;
+}
+
+.table-striped tr{
+	font-size:18px;
+}
+
+.table-striped th{
+	font-size:20px;
+}
+
+
+.pass{
+	background-color:#99FF00; 
+
+
+}
+
+.fail{
+	background-color:#FF4500; 
+
+}
+
+h4{
+	text-align:center;
+	color:black;
+}

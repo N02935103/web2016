@@ -37,9 +37,14 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         //echo "id: " . $row["id"]. " - Name: " . $row["username"]. " " . $row["password"]. "<br>";
         if($name==$row["username"] && $pass== $row["password"]){
-			header("location: ../php/profile.php"); // Redirecting To Other Page
+			header("location: ../projectclass/list.php"); // Redirecting To Other Page
         }else{
-        	$error="Username or Password is invalid";
+        	$error='<div class="alert alert-danger">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Danger!</strong> 	Username or Password is invalid.
+
+  </div>
+</div>';
         }
        	
     }

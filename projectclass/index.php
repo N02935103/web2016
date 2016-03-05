@@ -39,6 +39,10 @@ header("location: /Applications/MAMP/htdocs/web2016-master/projectclass/php/prof
     	<h2>Hello Professor, Please login to see the list of the students you advising.</h2>
     </div>
     <div class="panel-body">
+
+    	<span ><?php echo $error; ?></span>
+    	
+
     	
     	<form data-toggle="validator" role="form" class="form-horizontal" action="" method="post">
 								<div class="form-group has-feedback">
@@ -52,6 +56,7 @@ header("location: /Applications/MAMP/htdocs/web2016-master/projectclass/php/prof
 
 									</div>
 								</div>
+								
 
 								<div class="form-group has-feedback">
 									<label class="col-xs-3 control-label">Password</label>
@@ -70,7 +75,6 @@ header("location: /Applications/MAMP/htdocs/web2016-master/projectclass/php/prof
 										<button class="btn btn-primary" name="submit" type="submit" >
 											Login
 										</button>
-										<span><?php echo $error; ?></span>
 										
 									</div>
 								</div>
