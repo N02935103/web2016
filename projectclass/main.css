@@ -17,6 +17,13 @@ body{
     z-index: 1;
 }
 
+#goback{
+ 	position: absolute;
+    left: 7%;
+    top: 3%;
+    z-index: 1;
+}
+
 .panel .panel-info{
 	 	position: absolute;
 
@@ -79,6 +86,31 @@ body{
 	top:1px;
 }
 
+
+.myButton2 {
+	background-color:;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:19px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton2:hover {
+	background-color:;
+}
+.myButton1:active {
+	position:relative;
+	top:2px;
+}
+
 .table-striped tr{
 	font-size:18px;
 }
@@ -99,7 +131,18 @@ body{
 
 }
 
+
 h4{
 	text-align:center;
 	color:black;
+    font-weight: bold;
+}
+
+ .form-group textarea.form-control {
+    height: 250px;
+}
+
+h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }

@@ -54,8 +54,42 @@ include('..php/session.php');
     	
     	
     	</div>
+    	
+    	
   </div>
-</div>
+  
+  <div class="container col-md-12  ">
+  
+  <div class="panel panel-success">
+    <div class="panel-heading text-center">
+    	<h2>Hello Professor, Here's you can upload CSV file as a list of the students you advising.</h2>
+    </div>
+    <div class="panel-body">
+    	<table width="800">
+<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" enctype="multipart/form-data">
+
+<tr>
+<td width="20%">Select file</td>
+<td width="80%"><input type="file" name="file" id="file" /></td>
+</tr>
+
+<tr>
+<td>Submit</td>
+<td><input type="submit" name="submit" /></td>
+</tr>
+
+</form>
+</table>
+    	
+    	
+    	</div>
+    	
+    	
+  </div>
+  
+  
+
+    	
 <script src="../projectclass/js/main.js" type="text/javascript"></script>
 </body>
 </html>
