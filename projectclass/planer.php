@@ -117,7 +117,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -169,7 +169,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -246,7 +246,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -298,7 +298,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -357,7 +357,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -409,7 +409,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -467,7 +467,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -519,7 +519,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -577,7 +577,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -629,7 +629,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -706,7 +706,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -764,7 +764,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -822,7 +822,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -880,7 +880,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -939,7 +939,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -1005,7 +1005,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -1085,7 +1085,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -1137,7 +1137,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -1195,7 +1195,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -1247,7 +1247,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -1305,7 +1305,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 
@@ -1357,7 +1357,7 @@ var cs = $(this).attr("data-value");
 					$('#grade').html("<h4> Fail or no grade recived for "+cs+" " + grade + "</h4>");
 
 				} else {
-					$('#grade').html("<h4> Grade recived for " +cs+" " + grade + "</h4>");
+					$('#grade').html("<h4> Grade recived for " +cs+"<br> " + grade + "</h4>");
 
 				}
 

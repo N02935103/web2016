@@ -1,0 +1,380 @@
+.video-hero {
+	position: relative;
+	overflow: hidden;
+}
+.video-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	    	background-size: cover;
+}
+.video-bg video {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    	transform: translate(-50%,-50%);
+}
+	/**
+	 * For full-screen video backgrounds, add the
+	 * .video-bg--fullscreen class to .video-bg div
+	 */
+	.video-bg--fullscreen {
+		position: fixed;
+	}
+.video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	pointer-events: none; /* Allows right click menu on the video */
+	background: rgba(0,0,0,0.5); /* You can play with the opacity */
+}
+
+.video-hero--content button{
+background: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 1px;
+    box-shadow: none;
+    border: 2px solid #fff;
+    outline-style: none;
+    
+   }
+   
+   .video-hero--content button:hover{
+   	background: transparent;
+	color: #fff;
+	2px solid purple;
+   }
+   
+   
+   
+/**
+ * This part should be set separately for each video
+ * if there are multiple videos in your site.
+ * I.e. '.demo-video' is the name of the video
+ */
+/*.video-bg.demo-video {
+	background-image: url(files/office-people-working.jpg);
+}*/
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .video-bg video {
+	opacity: 1;
+	-webkit-transition: opacity .18s linear;
+	   -moz-transition: opacity .18s linear;
+	    	transition: opacity .18s linear;
+}
+.js .video-bg video.is-playing {
+	opacity: 1;
+}
+
+.video-hero--content{
+	      text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* =============================================== *\
+	HTML5 VIDEO HERO
+	You don't need to copy this, but you might
+	draw some inspiration from it
+\* =============================================== */
+.video-hero {
+	height: 650px; /* Feel free to set a height in your own way */
+}
+.video-hero--content {
+	position: relative;
+	text-align: right;
+	margin-top: 200px;
+	color: #FFF;
+	text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+/* =============================================== *\
+	OTHER STUFF - no need to copy this
+\* =============================================== */
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	 background-image: url("img/back.jpg");
+	background-color: #FFDFDD;
+}
+
+body hr{
+	color: #df7158;
+background-color: #df7158;
+height: 2px;
+ 
+}
+a {
+	text-decoration: none;
+	color: #a46497;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.page-width {
+	width: 92%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+#container {
+	width: 960px;
+	margin: 100px auto;
+	background: rgba(255,255,255,0.6);
+	position: absolute;
+	z-index: 3;
+}
+.navbar .container {
+   .navbar .container {
+    padding-right: 15px;
+    padding-left: 119px;
+    margin-right: -15px;
+    margin-left: auto;
+}
+}
+#header {
+	background: #2c2d33;
+	padding: 2em 0;
+}
+#header a {
+	color: #FFF;
+}
+.title {
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.subtitle {
+	display: block;
+	font-weight: normal;
+	font-size: 15px;
+	color: #959699;
+}
+a:hover .subtitle {
+	color: #FFF;
+}
+#site-title {
+	float: left;
+	margin: 0;
+}
+#menu {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li {
+	margin: 0;
+	padding: 0 15px;
+	display: inline-block;
+}
+.video-hero--content h2 {
+	font-size: 34px;
+	margin: 0 0 10px;
+}
+.video-hero--content p {
+	font-size: 20px;
+	margin: 0;
+}
+
+.coolnav{
+	background-color:pink;
+}
+
+
+
+
+.row {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+ .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+.about{
+border: none;
+        background: rgba(255,255,255,0.9);
+}
+
+#products{
+	
+    background: rgb(223,191,255);
+}
+
+/*@media (min-width: 1200px)
+.container {
+     width: none; 
+     padding-right: 15px;
+    padding-left: 119px;
+    margin-right: -15px;
+    margin-left: auto;
+}*/
+
+#blog{
+	background-image: url("img/back.jpg");
+}
+
+#deals{
+	background-color: rgb(255,255,193);
+}
+
+
+#footer {
+    background-color:rgb(255,191,192);
+    padding: 20px 0;
+}
+
+.slides{
+	padding:-100px;
+}
+
+#testam{
+	background-color: rgb(255,255,255);
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.testam img{
+	height:500;
+	width:800;
+}
+
+ .navbar-collapse h1{
+    float: right;
+    right: 8%;
+    top: 18%;
+    position: absolute;
+    font-family: 'Brush Script MT', cursive;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 26.4px;
+	color:rgb(121,181,196);
+     }
+     
+     #sticker{
+	 z-index:3; 	  
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color:rgb(223,191,255);
+    border-color:rgb(223,191,255);
+}
+
+
+.btn-primary :hover{
+    color: #ffffff;
+    background-color:rgb(255,191,192);
+    border-color:rgb(255,191,192);
+}
